@@ -6,17 +6,12 @@ public class FileOutputStreamTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try {
-			FileOutputStream out = new FileOutputStream("myFile.dat");
-			out.write('H');
-			out.write(null);
-			out.write(69);
-			out.write(null);
-			out.write(76);
-			out.write(null);
-			out.write('L');
-			out.write(null);
+			FileOutputStream out = new FileOutputStream("myFile.txt");
+			out.write('H');			
+			out.write(69);			
+			out.write(76);			
+			out.write('L');			
 			out.write('O');
-			out.write(null);
 			out.write('!');
 			out.close();
 		}catch (FileNotFoundException e) {
@@ -25,6 +20,7 @@ public class FileOutputStreamTest {
 			System.out.println("Error: Cannot write to file.");
 			
 		}
+		System.out.println();
 
 	}
 

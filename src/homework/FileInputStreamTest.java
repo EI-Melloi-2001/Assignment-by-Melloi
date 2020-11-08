@@ -5,7 +5,7 @@ public class FileInputStreamTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		try {
-			FileInputStream in = new FileInputStream("myFile.dat");
+			FileInputStream in = new FileInputStream("myFile.txt");
 			while(in.available()>0)
 				System.out.print(in.read()+"");
 			in.close();

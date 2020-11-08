@@ -7,7 +7,7 @@ public class PipedStreamDemo {
 		//对可能发生的异常交由系统处理
 		PipedOutputStream pos = new PipedOutputStream();
 		PipedInputStream pis = new PipedInputStream(pos);
-		byte datamover = 0;
+		byte datamover = 9;
 		System.out.println("\nNow I start to work……\n ");
 		try {
 			System.out.println("transfer "+datamover+" to pos.\n");
